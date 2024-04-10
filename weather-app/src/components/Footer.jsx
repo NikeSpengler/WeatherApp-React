@@ -8,7 +8,6 @@ const StyledFooter = styled.div`
     color: white;
     padding-top: 40px;
     padding-bottom: 10px;
-  }
 `;
 
 

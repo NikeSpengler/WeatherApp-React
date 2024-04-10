@@ -10,7 +10,7 @@ import sun_icon from "../assets/sun.svg"
 // const bg_hover_color = "rgb(34, 139, 230, 0.8)";
 
 // styled component
-const StyledInput= styled.input`
+const StyledInput = styled.input`
   display: flex;
   border-radius: 50px;
   border: none;
@@ -30,6 +30,13 @@ const StyledInputContainer = styled.div`
   gap: 14px;
   padding-top: 100px;
   padding-bottom: 60px;
+ 
+`;
+
+const StyledMainContainer = styled.div`
+  background-color: darkblue;
+  height: 100%;
+  
 `;
 
 const StyledHeader = styled.div`
@@ -38,7 +45,7 @@ const StyledHeader = styled.div`
     gap: 20px;
     font-size: 40px;
     color: white;
-  }
+  
 `;
 
 const StyledContainer = styled.div`
@@ -47,19 +54,19 @@ const StyledContainer = styled.div`
     gap: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
-  }
+  
 `;
 
 const StyledText = styled.div`
     font-size: 14px;
     color: white;
-  }
+  
 `;
 
 const StyledNumber = styled.div`
     font-size: 20px;
     color: white;
-  }
+  
 `;
 
 const StyledElement = styled.div`
@@ -67,15 +74,15 @@ const StyledElement = styled.div`
     display: flex;
     align-items: flex-start;
     gap: 16px;
-  }
+  
 `;
 
-const StyledInfo = styled.img`
+const StyledInfo = styled.div`
    height: 50px;
-  }
+  
 `;
 
-const StyledIcon= styled.img`
+const StyledIcon = styled.img`
   display: flex;
   justify-content: center;
   padding-top: 40px;
@@ -118,41 +125,44 @@ const Weather = () => {
       
   
       <div>
-        <StyledHeader className="container">
-          <div className="weather-temp">24°</div>
-          <div className="weather-location">London</div>
-        </StyledHeader>
+        <StyledMainContainer>
+          <StyledHeader className="container">
+              <div className="weather-temp">24°</div>
+              <div className="weather-location">London</div>
+            </StyledHeader>
 
-        <StyledContainer>
-            <div className="temp-icon">
-                <StyledIcon src={sun_icon} alt=""/>
-            </div>
-        </StyledContainer>
-        <StyledContainer>
-          <StyledElement className="element">
-              <StyledInfo src={rain_icon} alt="" className=""/>
-              <div className="data">
-                  <StyledNumber className="humidity-percent">64%</StyledNumber>
-                  <StyledText className="text">Humidity</StyledText>
-              </div>
-          </StyledElement>
-          <StyledElement className="element">
-              <StyledInfo src={wind_icon} alt="" className=""/>
-              <div className="data">
-                  <StyledNumber className="wind-rate">18 km/h</StyledNumber>
-                  <StyledText className="text">Wind</StyledText>
-              </div>
-          </StyledElement>
-        </StyledContainer>
-       
-       
-        <StyledInputContainer>
-          <StyledInput type="text" className="cityInput" placeholder="Search"></StyledInput>
-                <div className="search-icon" onClick={() => {search()}}>
-                    <img src={search_icon} alt="" height={40} width={40}/>
+            <StyledContainer>
+                <div className="temp-icon">
+                    <StyledIcon src={sun_icon} alt=""/>
                 </div>
-        </StyledInputContainer>
-        
+            </StyledContainer>
+            <StyledContainer>
+              <StyledElement className="element">
+                  <StyledInfo src={rain_icon} alt="" className=""/>
+                  <div className="data">
+                      <StyledNumber className="humidity-percent">64%</StyledNumber>
+                      <StyledText className="text">Humidity</StyledText>
+                  </div>
+              </StyledElement>
+              <StyledElement className="element">
+                  <StyledInfo src={wind_icon} alt="" className=""/>
+                  <div className="data">
+                      <StyledNumber className="wind-rate">18 km/h</StyledNumber>
+                      <StyledText className="text">Wind</StyledText>
+                  </div>
+              </StyledElement>
+            </StyledContainer>
+          
+          
+            <StyledInputContainer>
+              <StyledInput type="text" className="cityInput" placeholder="Search"></StyledInput>
+                    <div className="search-icon" onClick={() => {search()}}>
+                        <img src={search_icon} alt="" height={40} width={40}/>
+                    </div>
+            </StyledInputContainer>
+
+        </StyledMainContainer>
+          
       </div>
     )
   }

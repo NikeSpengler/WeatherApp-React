@@ -24,22 +24,29 @@ const StyledInput= styled.input`
   
 `;
 
-const StyledInputContainer= styled.div`
+const StyledInputContainer = styled.div`
   display: flex;
   justify-content: center;
   gap: 14px;
-  padding-top: 60px;
+  padding-top: 100px;
   padding-bottom: 60px;
+`;
+
+const StyledHeader = styled.div`
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 40px;
+    color: white;
+  }
 `;
 
 const StyledContainer = styled.div`
     display: flex;
     justify-content: center;
     gap: 40px;
-    font-size: 18px;
-    color: white;
-    padding-top: 40px;
-    padding-bottom: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 `;
 
@@ -81,7 +88,7 @@ const StyledIcon= styled.img`
 
 
 
-const SearchBar = () => {
+const Weather = () => {
 
   let api_key = "5b571ce40d21566c99b64e5ea96f1c7a";
 
@@ -111,10 +118,10 @@ const SearchBar = () => {
       
   
       <div>
-        <StyledContainer className="container">
+        <StyledHeader className="container">
           <div className="weather-temp">24°</div>
           <div className="weather-location">London</div>
-        </StyledContainer>
+        </StyledHeader>
 
         <StyledContainer>
             <div className="temp-icon">
@@ -150,4 +157,4 @@ const SearchBar = () => {
     )
   }
   
-  export default SearchBar
+  export default Weather

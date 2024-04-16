@@ -15,7 +15,7 @@ const StyledLandingContainer = styled.div`
 const StyledLandingText = styled.a`
   display: flex;
   justify-content: center;
-  font-size: 20px;
+  font-size: 30px;
   color: white;
   &:hover {
     color: lightgrey;

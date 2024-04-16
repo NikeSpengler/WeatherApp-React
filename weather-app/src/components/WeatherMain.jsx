@@ -11,6 +11,13 @@ import Header from "./Header"
 // const bg_hover_color = "rgb(34, 139, 230, 0.8)";
 
 // styled component
+
+const StyledMainContainer = styled.div`
+  background-color: darkblue;
+  height: 100%;
+`;
+
+
 const StyledInput = styled.input`
   display: flex;
   border-radius: 50px;
@@ -22,7 +29,6 @@ const StyledInput = styled.input`
   padding-left: 30px;
   width: 362px;
   height: 40px;
-  
 `;
 
 const StyledInputContainer = styled.div`
@@ -31,13 +37,6 @@ const StyledInputContainer = styled.div`
   gap: 14px;
   padding-top: 100px;
   padding-bottom: 60px;
- 
-`;
-
-const StyledMainContainer = styled.div`
-  background-color: darkblue;
-  height: 100%;
-  
 `;
 
 const StyledHeader = styled.div`

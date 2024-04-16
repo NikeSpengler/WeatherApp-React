@@ -27,14 +27,19 @@ const StyledInput = styled.input`
   color: black;
   font-size: 18px;
   padding-left: 30px;
-  width: 362px;
+  width: 400px;
   height: 40px;
+  @media (max-width: 420px) {
+    width: 230px;
+  }
 `;
 
 const StyledInputContainer = styled.div`
   display: flex;
   justify-content: center;
-  gap: 14px;
+  gap: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 100px;
   padding-bottom: 60px;
 `;

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 // styled component
 const StyledLandingContainer = styled.div`
-  background-color: black;
+  background-color: yellow;
   height: 100%;
 
 `;

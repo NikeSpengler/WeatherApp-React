@@ -1,8 +1,9 @@
-import search_icon from "../assets/search.svg"
+import search_icon from "../assets/search.svg";
 import styled from "@emotion/styled";
-import wind_icon from "../assets/wind.svg"
-import rain_icon from "../assets/rain.svg"
-import sun_icon from "../assets/sun.svg"
+import wind_icon from "../assets/wind.svg";
+import rain_icon from "../assets/rain.svg";
+import sun_icon from "../assets/sun.svg";
+import Header from "./Header"
 
 // constants
 // const text_color = "#fff";
@@ -95,7 +96,7 @@ const StyledIcon = styled.img`
 
 
 
-const Weather = () => {
+const WeatherMain = () => {
 
   let api_key = "5b571ce40d21566c99b64e5ea96f1c7a";
 
@@ -121,10 +122,9 @@ const Weather = () => {
   }
 
 
-    return (
-      
-  
+  return (
       <div>
+        <Header/>
         <StyledMainContainer>
           <StyledHeader className="container">
               <div className="weather-temp">24°</div>
@@ -164,7 +164,7 @@ const Weather = () => {
         </StyledMainContainer>
           
       </div>
-    )
-  }
+  )
+}
   
-  export default Weather
+export default WeatherMain

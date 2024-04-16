@@ -1,27 +1,25 @@
 import './App.css'
-// import WeatherBase from "./components/WeatherBase"
-import Weather from './components/Weather'
+import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer"
-import LandingPage from './components/LandingPage'
-// import WeatherImg from './components/WeatherImg'
-// import WeatherTemp from './components/WeatherTemp'
-// import WeatherInfo from './components/WeatherInfo'
+import Home from './components/Home'
+import WeatherMain from './components/WeatherMain';
+import NoPage from "./components/NoPage";
+
 
 
 function App() {
-
   return (
-    <section>
-      {/* <WeatherBase/>
-      <WeatherTemp/>
-      <WeatherImg/>
-      <WeatherInfo/> */}
-      <LandingPage/>
-      <Weather/>
+    <>
+      <div>
+          <Routes>
+            <Route index element= {<Home />} />
+            <Route path="/home" element ={<Home />} />
+            <Route path="/weather" element= {<WeatherMain/>} />
+            <Route path="/*" element= {<NoPage />} />
+          </Routes>
+      </div>
       <Footer/>
-     
-     
-    </section>
+    </>
   )
 }
 

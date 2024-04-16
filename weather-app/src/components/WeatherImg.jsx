@@ -1,4 +1,4 @@
-import sun_icon from "../assets/sun.svg"
+import thunder_icon from "../assets/thunder.svg"
 import styled from "@emotion/styled";
 
 // constants
@@ -30,7 +30,7 @@ const WeatherImg = () => {
     return (
       <StyledContainer>
             <div className="temp-icon">
-                <StyledIcon src={sun_icon} alt=""/>
+                <StyledIcon src={thunder_icon} alt=""/>
             </div>
       </StyledContainer>
     )

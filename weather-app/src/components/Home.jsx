@@ -70,7 +70,7 @@ const Home = () => {
         </div>
         <WeatherImg/>
         <StyledLandingText className="container">
-          <Link to="/weather">Start!</Link>
+          <Link className="link" to="/weather">Start!</Link>
         </StyledLandingText>
         <Footer/>
       </StyledLandingContainer>

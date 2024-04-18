@@ -7,6 +7,8 @@ const StyledHeader = styled.div`
     justify-content: start;
     padding-top: 15px;
     padding-bottom: 30px;
+    background-color: darkblue;
+    color: white;
 `;
 
 const StyledLink = styled.a`
@@ -14,14 +16,14 @@ const StyledLink = styled.a`
     justify-content: start;
     font-size: 20px;
     color: white;
-    background-color: white;
+    text-decoration: none;
 `;
 
 const Header = () => {
     return (
       <StyledHeader className="container">
         <StyledLink>
-          <Link to="/home" className="header-nav">Go back</Link>
+          <Link to="/home" className="header-nav" color="white">Go back</Link>
         </StyledLink>
       </StyledHeader>
     )

@@ -7,18 +7,11 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 
-// constants
-// const text_color = "#fff";
-// const bg_color = "rgb(34, 139, 230)";
-// const bg_hover_color = "rgb(34, 139, 230, 0.8)";
-
 // styled component
-
 const StyledMainContainer = styled.div`
   background-color: darkblue;
   height: 100%;
 `;
-
 
 const StyledInput = styled.input`
   display: flex;
@@ -39,8 +32,7 @@ const StyledInput = styled.input`
 const StyledInputContainer = styled.div`
   display: flex;
   justify-content: center;
-  gap: 10px;
-  padding-left: 20px;
+  padding-left: 10px;
   padding-right: 20px;
   padding-top: 100px;
   padding-bottom: 60px;
@@ -52,7 +44,6 @@ const StyledHeader = styled.div`
     gap: 20px;
     font-size: 40px;
     color: white;
-  
 `;
 
 const StyledContainer = styled.div`
@@ -61,19 +52,16 @@ const StyledContainer = styled.div`
     gap: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
-  
 `;
 
 const StyledText = styled.div`
     font-size: 14px;
     color: white;
-  
 `;
 
 const StyledNumber = styled.div`
     font-size: 20px;
     color: white;
-  
 `;
 
 const StyledElement = styled.div`
@@ -81,12 +69,10 @@ const StyledElement = styled.div`
     display: flex;
     align-items: flex-start;
     gap: 16px;
-  
 `;
 
 const StyledInfo = styled.div`
    height: 50px;
-  
 `;
 
 const StyledIcon = styled.img`
@@ -95,10 +81,7 @@ const StyledIcon = styled.img`
   padding-top: 40px;
   padding-bottom: 40px;
   width: 200px;
-
 `;
-
-
 
 
 
@@ -158,8 +141,6 @@ const WeatherMain = () => {
                   </div>
               </StyledElement>
             </StyledContainer>
-          
-          
             <StyledInputContainer>
               <StyledInput type="text" className="cityInput" placeholder="Search"></StyledInput>
                     <div className="search-icon" onClick={() => {search()}}>
@@ -168,7 +149,6 @@ const WeatherMain = () => {
             </StyledInputContainer>
             <Footer/>
         </StyledMainContainer>
-        
       </div>
   )
 }

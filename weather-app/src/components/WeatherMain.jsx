@@ -25,23 +25,28 @@ const StyledInput = styled.input`
   width: 400px;
   height: 40px;
   @media (max-width: 420px) {
-    width: 230px;
+    width: 240px;
   }
 `;
 
 const StyledInputContainer = styled.div`
   display: flex;
   justify-content: center;
-  padding-left: 10px;
-  padding-right: 20px;
-  padding-top: 100px;
+  gap: 5px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 200px;
   padding-bottom: 60px;
+  @media (max-width: 420px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 `;
 
 const StyledHeader = styled.div`
     display: flex;
     justify-content: center;
-    gap: 20px;
+    // gap: 20px;
     font-size: 40px;
     color: white;
 `;

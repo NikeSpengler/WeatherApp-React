@@ -7,15 +7,11 @@ import { createContext, useState } from "react";
 import ReactSwitch from "react-switch";
 
 
-// constants
-// const bg_color = "rgb(34, 139, 230)";
-
 // styled component
 const StyledLandingContainer = styled.div`
   height: 100%;
   padding-topp: 40px;
   padding-bottom: 120px
-
 `;
 
 const StyledLandingText = styled.a`
@@ -26,32 +22,8 @@ const StyledLandingText = styled.a`
   &:hover {
     color: lightgrey;
     }
-
 `;
 
-// const StyledInputToggle = styled.input`
-//   display: flex;
-//   justify-content: center;
-//   font-size: 30px;
-//   color: white;
-//   &:hover {
-//     color: lightgrey;
-//     }
-
-// `;
-
-// const StyledInputLabel = styled.label`
-//   background-color: lightgrey;
-//   width: 200px;
-//   height: 100px;
-//   border-radius: 200px;
-//   cursor: pointer;
-//   position: realtive;
-//   ::before {
-//     position: absolute;
-//   }
-
-// `;
 
 
 export const ThemeContext = createContext(null);

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const StyledHeader = styled.div`
     display: flex;
     justify-content: start;
-    padding-top: 2px;
+    padding-top: 15px;
     padding-bottom: 30px;
 `;
 

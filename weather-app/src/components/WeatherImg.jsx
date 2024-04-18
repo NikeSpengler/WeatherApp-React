@@ -19,14 +19,19 @@ const StyledContainer= styled.div`
 const StyledIcon= styled.img`
   display: flex;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 150px;
   padding-bottom: 40px;
   width: 200px;
+  @keyframes temp-icon-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
 
 `;
 const WeatherImg = () => {
-
-  
     return (
       <StyledContainer>
             <div className="temp-icon">

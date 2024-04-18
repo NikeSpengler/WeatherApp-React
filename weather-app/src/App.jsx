@@ -6,7 +6,6 @@ import WeatherMain from './components/WeatherMain';
 import NoPage from "./components/NoPage";
 
 
-
 function App() {
   return (
     <>
@@ -18,7 +17,6 @@ function App() {
             <Route path="/*" element= {<NoPage />} />
           </Routes>
       </div>
-      <Footer/>
     </>
   )
 }

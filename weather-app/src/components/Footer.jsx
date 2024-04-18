@@ -7,7 +7,7 @@ const StyledFooter = styled.div`
     font-size: 12px;
     color: white;
     padding-top: 220px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 `;
 
 

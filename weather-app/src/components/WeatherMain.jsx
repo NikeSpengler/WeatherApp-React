@@ -3,7 +3,9 @@ import styled from "@emotion/styled";
 import wind_icon from "../assets/wind.svg";
 import rain_icon from "../assets/rain.svg";
 import sun_icon from "../assets/sun.svg";
-import Header from "./Header"
+import Header from "./Header";
+import Footer from "./Footer";
+
 
 // constants
 // const text_color = "#fff";
@@ -164,9 +166,9 @@ const WeatherMain = () => {
                         <img src={search_icon} alt="" height={40} width={40}/>
                     </div>
             </StyledInputContainer>
-
+            <Footer/>
         </StyledMainContainer>
-          
+        
       </div>
   )
 }

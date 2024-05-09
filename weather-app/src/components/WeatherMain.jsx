@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 import wind_icon from "../assets/wind.svg";
 import rain_icon from "../assets/rain.svg";
 import sun_icon from "../assets/sun.svg";
-import Header from "./Header";
 import Footer from "./Footer";
 
 
@@ -47,6 +46,7 @@ const StyledHeader = styled.div`
     display: flex;
     justify-content: center;
     // gap: 20px;
+    padding-top: 50px;
     font-size: 40px;
     color: white;
 `;
@@ -119,7 +119,7 @@ const WeatherMain = () => {
 
   return (
       <div>
-        <Header/>
+        {/* <Header/> */}
         <StyledMainContainer>
           <StyledHeader className="container">
               <div className="weather-temp">24°</div>

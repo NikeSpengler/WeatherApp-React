@@ -2,7 +2,7 @@
 A weather app. Please try it out, following the demo adress bellow. 
 
 ## Built in: 
-Made with: React, Vite, OpenWatherMap(API) and styled by Emotion/Styled.
+React, Vite, OpenWeatherMap(API) and styled by Emotion/Styled.
 
 ## Demo: 
 https://weather-nike-spengler.netlify.app/

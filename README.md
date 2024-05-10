@@ -7,6 +7,8 @@ React, Vite, OpenWeatherMap(API) and styled by Emotion/Styled.
 ## Demo: 
 https://weather-nike-spengler.netlify.app/
 
-<img width="1143" alt="Skärmavbild 2024-05-09 kl  15 14 13" src="https://github.com/NikeSpengler/ToDoApp-React/assets/32640656/4b4ecf6a-db13-47b9-bbbd-72865b7283d6">
+<img width="1188" alt="Skärmavbild 2024-05-10 kl  11 10 18" src="https://github.com/NikeSpengler/WeatherApp-React/assets/32640656/176883c4-8459-4896-a41c-6ecc385ed247">
+
+
 
 
